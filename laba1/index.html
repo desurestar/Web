@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>laba1</title>
-    <link rel="stylesheet" href="style.css">
-    <script src=""></script>
-    
-</head>
-<body>
-    <div class="content">
-        <div id="text-block">
-            Определенно что-то важное
-        </div>
-    </div>
-    <textarea name="input-text" id="input-text" cols="50" rows="15" placeholder="Введите текст"></textarea>
-    <div class="buttons">
-        <button onclick="InsertBefore()">Вставить перед тегом</button>
-        <button onclick="Replace()">Заменить тег</button>
-        <button onclick="InsertAfter()">Вставить после тегa</button>
-    </div>
-    <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>laba1</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src=""></script>
+	</head>
+	<body>
+		<main class="content">
+			<div class="conteiners">
+				<div id="text-block">Определенно что-то важное</div>
+			</div>
+
+			<textarea
+				name="input-text"
+				id="input-text"
+				rows="1"
+				placeholder="Введите текст"
+			></textarea>
+			<div class="buttons">
+				<button onclick="InsertBefore()">Вставить перед тегом</button>
+				<button onclick="Replace()">Заменить тег</button>
+				<button onclick="InsertAfter()">Вставить после тегa</button>
+			</div>
+
+			<script src="script.js"></script>
+		</main>
+	</body>
 </html>

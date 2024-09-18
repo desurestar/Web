@@ -1,3 +1,74 @@
+body {
+	background: linear-gradient(to right, #080253, #48016e);
+	font-family: 'Montserrat';
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+
 .content {
-    margin-bottom: 30px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.conteiners {
+	height: 40%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.conteiners div {
+	color: #a6e1fa;
+	font-family: 'Montserrat';
+	font-size: 24px;
+	line-height: 1.5;
+	margin: 15px;
+}
+
+
+textarea {
+	margin: 15px;
+	outline: none;
+	padding: 15px 15px;
+	height: auto;
+	border-radius: 36px;
+	width: 75%;
+	min-height: 10px;
+	font-family: 'Montserrat';
+	font-size: 24px;
+	line-height: 1.5;
+	resize: none;
+	overflow: hidden;
+	background-color: #b5edf0;
+	color: #004d4d;
+}
+button {
+	height: 60px;
+	width: 300px;
+	font-family: 'Montserrat';
+	font-size: 24px;
+	color: #00bfff;
+
+	background-color: rgba(66, 6, 6, 0.123);
+	border-radius: 36px;
+	outline: none;
+	transition: transform 0.25s ease, background-color 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+button:hover {
+	transform: scale(1.1);
+	background-color: rgba(0, 0, 0, 0.352);
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.519);
+}
+
+.buttons {
+	margin-top: 30px;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
 }

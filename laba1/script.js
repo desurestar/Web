@@ -1,16 +1,30 @@
 const textBlock = document.getElementById('text-block')
 const textInput = document.getElementById('input-text')
-console.log(10)
+
+document.addEventListener('input', function (event) {
+	if (event.target.tagName.toLowerCase() === 'textarea') {
+		autoResize(event.target)
+	}
+})
+
+function autoResize(textarea) {
+	textarea.style.height = '0px' // Сбрасываем высоту для правильного пересчета
+	textarea.style.height = textarea.scrollHeight - 30 + 'px' // Устанавливаем высоту равную содержимому
+}
+
 function InsertBefore() {
-    const newDiv = document.createElement('div')
-    newDiv.textContent = textInput.value
-    textBlock.parentNode.insertBefore(newDiv, textBlock)
+	if (textInput.value === '') return
+	const newDiv = document.createElement('div')
+	newDiv.textContent = textInput.value
+	textBlock.parentNode.insertBefore(newDiv, textBlock)
 }
 function InsertAfter() {
-    const newDiv = document.createElement('div')
-    newDiv.textContent = textInput.value
-    textBlock.parentNode.insertBefore(newDiv, textBlock.nextSibling)
+	if (textInput.value === '') return
+	const newDiv = document.createElement('div')
+	newDiv.textContent = textInput.value
+	textBlock.parentNode.insertBefore(newDiv, textBlock.nextSibling)
 }
 function Replace() {
-    textBlock.textContent = textInput.value
+	if (textInput.value === '') return
+	textBlock.textContent = textInput.value
 }
