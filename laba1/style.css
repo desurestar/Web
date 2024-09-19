@@ -46,6 +46,12 @@ textarea {
 	background-color: #b5edf0;
 	color: #004d4d;
 }
+textarea::selection {
+	background-color: grey;
+	color: black;
+
+}
+
 button {
 	height: 60px;
 	width: 300px;
