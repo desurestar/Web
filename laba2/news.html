@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <title>РИА Новости</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+
+</head>
+
+<body>
+    <header class="header" role="banner">
+        <div class="sitename">
+            <h1>Новости</h1>
+        </div>
+        <nav class="header_nav">
+            <ul class="list">
+                <li class="list__item"><a class="list_link" href="index.html">Главная</a></li>
+                <li class="list__item"><a class="list_link" href="#">Новости</a></li>
+                <li class="list__item"><a class="list_link" href="#">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main" role="main">
+        <section class="content" id="cont">
+
+            <article class="new_Item">
+                <h2 class="new_Item__title" id="news_title"></h2>
+                <figure class="new_Item__img">
+                    <img width="50%" id="image">
+                </figure>
+                <div>
+                    <p class="new_Item__p" id="news_description"></p>
+                </div>               
+                <time class="new_Item_time" id="news_date"></time>
+                <a href="index.html">Вернуться назад</a>
+            </article>
+
+
+            <script src="news_script.js"></script>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="footer__policy">
+            Мы используем файлы cookie для улучшения работы сайта и
+            персонализации
+            вашего опыта. Мы также можем использовать ваши данные
+            для статистических и маркетинговых целей, но только с вашего
+            согласия.
+            Политика конфиденциальности определяет политику Оператора в
+            отношении
+            обработки Данных Пользователей при использовании
+            ими Ресурса, а также содержит сведения о реализуемых требованиях к
+            защите персональных данных Пользователей.
+        </div>
+        <div class="footer__policy">©Новости 2024. Все права защищены</div>
+        <div><a href="#MAIN">На главную</a></div>
+    </footer>
+</body>
