@@ -1,0 +1,10 @@
+{
+	"name": "laba2",
+	"version": "1.0.0",
+	"description": "laba2 test version",
+	"type": "module",
+	"main": "data.js",
+	"scripts": {},
+	"author": "Dmitry",
+	"license": "ISC"
+}
