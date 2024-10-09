@@ -24,11 +24,10 @@ body::-webkit-scrollbar {
 .conteiners div {
 	color: #a6e1fa;
 	font-family: 'Montserrat';
-	font-size: 24px;
+	/* font-size: 24px; */
 	line-height: 1.5;
 	margin: 15px;
 }
-
 
 textarea {
 	margin: 15px;

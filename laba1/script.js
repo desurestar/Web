@@ -7,10 +7,10 @@ document.addEventListener('input', function (event) {
 	}
 })
 
-function autoResize(textarea) {
-	textarea.style.height = '0px' // Сбрасываем высоту для правильного пересчета
-	textarea.style.height = textarea.scrollHeight - 30 + 'px' // Устанавливаем высоту равную содержимому
-}
+// function autoResize(textarea) {
+// 	textarea.style.height = '0px' // Сбрасываем высоту для правильного пересчета
+// 	textarea.style.height = textarea.scrollHeight - 30 + 'px' // Устанавливаем высоту равную содержимому
+// }
 
 function InsertBefore() {
 	if (textInput.value === '') return
